@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>Geometry-Guided Domain Generalization for Monocular 3D Object Detection</title>
+  <link rel="icon" type="image/x-icon" href="static/images/rocket.jpg">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,28 +52,37 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Geometry-Guided Domain Generalization for Monocular 3D Object Detection</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Fan Yang</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Hui Chen</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yuwei He</a>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Sicheng Zhao</a>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Chenghao Zhang</a>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Kai Ni</a>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Guiguang Ding</a><sup>*</sup></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Tsinghua University, BNRist, Hangzhou Zhuoxi Institute of Brain and Intelligence, HoloMatic Technology
+                    <br>AAAI2024</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Authors.</small></span>
+                    <br><p style="color: red;">This homepage is currently under construction !</p></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -95,7 +104,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/yfthu/MonoGDG" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -105,7 +114,7 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -113,7 +122,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -148,7 +157,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Monocular 3D object detection (M3OD) is important for autonomous driving. However, existing deep learning-based methods easily suffer from performance degradation in real-world scenarios due to the substantial domain gap between training and testing. M3OD's domain gaps are complex, including camera intrinsic parameters, extrinsic parameters, image appearance, etc. Existing works primarily focus on the domain gaps of camera intrinsic parameters, ignoring other key factors. Moreover, at the feature level, conventional domain invariant learning methods generally cause the negative transfer issue, due to the ignorance of dependency between geometry tasks and domains. To tackle these issues, in this paper, we propose MonoGDG, a Geometry-Guided Domain Generalization framework for M3OD, which effectively addresses the domain gap at both camera and feature levels. Specifically, MonoGDG consists of two major components. One is geometry-based image reprojection, which mitigates the impact of camera discrepancy by unifying intrinsic parameters, randomizing camera orientations, and unifying the field of view range. The other is geometry-dependent feature disentanglement, which overcomes the negative transfer problems by incorporating domain-shared and domain-specific features. Additionally, we leverage a depth-disentangled domain discriminator and a domain-aware geometry regression attention mechanism to account for the geometry-domain dependency. Extensive experiments on multiple autonomous driving benchmarks demonstrate that our method achieves state-of-the-art performance in domain generalization for M3OD.
           </p>
         </div>
       </div>
@@ -162,36 +171,56 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
+      <!-- <div id="results-carousel" class="carousel results-carousel"> -->
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/domaingaps_0816_00.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          The domain gaps in monocular 3D object detection are very complex, including focal length gap, camera orientation
+gap, image appearance gap, etc. (a) Two vehicles of the same 2D and 3D size are taken at different focal lengths, and their depths
+vary dramatically. (b) A higher pitch angle of the camera causes objects to appear lower in the image, leading to the trained
+model predicting closer depths for the objects. (c) Variations in image appearance, such as adverse weather and simulation data
+can considerably affect the perceived contextual visual information for the M3OD model.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/3DAPanddistribution_5figs_0816_00.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          (a) Conventional domain invariant learning techniques often lead to the negative transfer issue in M3OD. The chart
+shows the DG performance of models trained on nuScenes and Lyft, tested on KITTI. As the extent of domain invariance increases, the accuracy of M3OD will significantly decrease. (b-e) M3OD demonstrates significant geometry-domain dependency,
+with notable disparity in the geometry distribution of various domains, such as objects’ depth, dimension, and rotation.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/method_0816_2_00.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          Overview of the proposed MonoGDG. At the camera level, the Geometry-Based Image Reprojection process is applied
+          to images to address the domain gap of the camera, including Intrinsic Parameter Unification (IPU), Spherical Reprojection
+          (SR), Camera Orientation Randomization (COR), and FOV Range Unification (FOVRU). The extracted features from images
+          then undergo Geometry-Dependent Feature Disentanglement, which disentangles the feature into domain-shared and domain-specific branches. Depth-Disentangled Domain Discriminator disentangles the depth from domain alignment, and Domain-Aware Geometry Regression Attention is employed to integrate the domain and geometry features. GRL denotes the gradient
+          reversal layer.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/spherical_0816_00.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Left: The camera orientations and image field during training and testing are different. Right: Camera orientation randomization is performed in the spherical camera
+        during training to make the model agnostic to camera orientation.
       </h2>
     </div>
-  </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/3dbboxbevvis.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        The 3D BBox and BEV prediction from DGMono3D (in red), MonoGDG (in blue), and ground truth
+        (green in BEV) in PreSIL+nuScenes→KITTI setting. Zoom
+        in for a clear comparison.
+     </h2>
+   </div>
+  <!-- </div> -->
 </div>
 </div>
 </section>
